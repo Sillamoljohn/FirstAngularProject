@@ -1,0 +1,24 @@
+<!-- <p>
+  home works!
+</p>
+<button (click)="FirstClick()">Click Me</button>
+<input type="text" (keyup)="myMethod($event)" placeholder="fghjjhgyjjhjh">
+<p>{{inputText }}</p>
+<h1 [ngClass]="{'red':styleh1,
+'large':styleh1}">home color</h1>
+<h2 [style.color]="h2Style ? 'blue': 'black'">Jome</h2>
+<h3 [ngStyle]="{
+  'color': h3Style ? 'gray' : 'black',
+  'font-size': !h3Style ? '1em' : '4em'
+}">Home</h3> -->
+
+<h1>Users</h1>
+
+<ul *ngIf="users">
+  <li *ngFor="let user of users.data">
+    <img [src]="user.avatar">
+    <p>{{ user.first_name }} {{ user.last_name }}
+      <br>{{user.email}}
+    </p>
+  </li>
+</ul>
